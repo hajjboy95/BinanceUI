@@ -15,8 +15,10 @@ class TopBarCollectionViewCell: UICollectionViewCell {
     var isTapped: Bool = false {
         didSet {
             if isTapped {
-                currencyLabel.textColor = UIColor.binanceGold
-                bottomLineView.backgroundColor = UIColor.binanceGold
+                UIView.animate(withDuration: 0.2) {
+                    self.currencyLabel.textColor = UIColor.binanceGold
+                    self.bottomLineView.backgroundColor = UIColor.binanceGold
+                }
             } else {
                 currencyLabel.textColor = UIColor.white
                 bottomLineView.backgroundColor = UIColor.binanceGrey
