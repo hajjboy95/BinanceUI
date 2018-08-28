@@ -37,4 +37,9 @@ extension UIColor {
     static var binanceTitle: UIColor {
         return UIColor(hexFromString: "ABAEB4")
     }
+    
+    static var binanceGold: UIColor {
+        return UIColor(hexFromString: "DEBA72")
+    }
+    
 }

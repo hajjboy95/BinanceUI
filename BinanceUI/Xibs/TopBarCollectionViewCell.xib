@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,18 +24,29 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGw-EU-JOQ">
+                        <rect key="frame" x="0.0" y="100" width="164" height="4"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="hzr-T1-wme"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.12549019607843137" green="0.15686274509803921" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="z6y-J1-wDS" firstAttribute="centerY" secondItem="Blc-nG-nfF" secondAttribute="centerY" id="1EN-MC-5uj"/>
                 <constraint firstItem="z6y-J1-wDS" firstAttribute="leading" secondItem="Blc-nG-nfF" secondAttribute="leading" constant="2" id="1rQ-7P-WC1"/>
+                <constraint firstItem="jGw-EU-JOQ" firstAttribute="leading" secondItem="Blc-nG-nfF" secondAttribute="leading" id="N9H-Df-Wec"/>
                 <constraint firstItem="z6y-J1-wDS" firstAttribute="centerX" secondItem="Blc-nG-nfF" secondAttribute="centerX" id="Y5z-KF-gpX"/>
                 <constraint firstAttribute="trailing" secondItem="z6y-J1-wDS" secondAttribute="trailing" constant="2" id="eiI-iH-JMW"/>
+                <constraint firstAttribute="trailing" secondItem="jGw-EU-JOQ" secondAttribute="trailing" id="lq7-59-l7l"/>
+                <constraint firstAttribute="bottom" secondItem="jGw-EU-JOQ" secondAttribute="bottom" id="wDf-qN-xnM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="KJa-DB-JEz"/>
             <size key="customSize" width="164" height="104"/>
             <connections>
+                <outlet property="bottomLineView" destination="jGw-EU-JOQ" id="hRu-uw-qSI"/>
                 <outlet property="currencyLabel" destination="z6y-J1-wDS" id="CGP-CK-gsM"/>
             </connections>
             <point key="canvasLocation" x="-266" y="-57"/>

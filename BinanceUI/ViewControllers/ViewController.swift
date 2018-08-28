@@ -11,10 +11,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    fileprivate var selectedItemIndex = 0
+    
+    lazy var selectedIndexCallBack: ((IndexPath) -> Void) = {
+        (indexPath: IndexPath) -> Void in
+        self.selectedItemIndex = indexPath.row
+    }
+    
     @IBOutlet weak var topBarView: IEHTopBarView! {
         didSet {
             topBarView.collectionViewDataSource = TopBarUICollectionViewDataSource()
-            topBarView.collectionViewFlowLayout = TopBarUICollectionViewFlowLayout()
+            let uicollectionFlowLayout = TopBarUICollectionViewFlowLayout()
+            uicollectionFlowLayout.selectedIndexPath = selectedIndexCallBack
+            topBarView.collectionViewFlowLayout = uicollectionFlowLayout
         }
     }
     
@@ -22,3 +31,4 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 }
+

@@ -8,11 +8,6 @@
 
 import UIKit
 
-class TopBarCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var currencyLabel: UILabel!
-    var isTapped: Bool = false
-}
-
 class IEHTopBarView: UIView {
     
     lazy var collectionView: UICollectionView = {

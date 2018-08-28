@@ -18,6 +18,8 @@
 		CC703ABF21349E7E00C544AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC703ABD21349E7E00C544AE /* LaunchScreen.storyboard */; };
 		CC703ACA21349E7E00C544AE /* BinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AC921349E7E00C544AE /* BinanceUITests.swift */; };
 		CC703AD521349E7E00C544AE /* BinanceUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AD421349E7E00C544AE /* BinanceUIUITests.swift */; };
+		EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */; };
+		EC53C6C02135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CC703AD021349E7E00C544AE /* BinanceUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinanceUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC703AD421349E7E00C544AE /* BinanceUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceUIUITests.swift; sourceTree = "<group>"; };
 		CC703AD621349E7E00C544AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +160,12 @@
 				CC703AB421349E7D00C544AE /* AppDelegate.swift */,
 				CC1ECEFC213599D0004B1B57 /* Xibs */,
 				CC1ECEFE213599EC004B1B57 /* DataSource */,
+				EC53C6BE2135EFEF0014D2B7 /* Delegates */,
 				CC1ECEFD213599DF004B1B57 /* Views */,
 				CC1ECEFB213599C4004B1B57 /* ViewControllers */,
 				CC1ECEFF213599FC004B1B57 /* Storyboards */,
 				CC1ECEFA213599B8004B1B57 /* Extensions */,
+				EC53C6BD2135EF7E0014D2B7 /* UICollectionViewCell */,
 				CC703ABB21349E7E00C544AE /* Assets.xcassets */,
 				CC703ABD21349E7E00C544AE /* LaunchScreen.storyboard */,
 				CC703AC021349E7E00C544AE /* Info.plist */,
@@ -183,6 +189,22 @@
 				CC703AD621349E7E00C544AE /* Info.plist */,
 			);
 			path = BinanceUIUITests;
+			sourceTree = "<group>";
+		};
+		EC53C6BD2135EF7E0014D2B7 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		EC53C6BE2135EFEF0014D2B7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +343,8 @@
 				CC1ECEF521355E42004B1B57 /* TopBarUICollectionViewDataSource.swift in Sources */,
 				CC1ECEF9213599B3004B1B57 /* UIColor+extension.swift in Sources */,
 				CC703AB521349E7D00C544AE /* AppDelegate.swift in Sources */,
+				EC53C6C02135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift in Sources */,
+				EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */,
 				CC1ECEF32135573F004B1B57 /* IEHTopBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BinanceUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BinanceUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

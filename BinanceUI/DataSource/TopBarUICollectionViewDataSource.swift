@@ -24,17 +24,3 @@ final class TopBarUICollectionViewDataSource: NSObject, UICollectionViewDataSour
         return cell
     }
 }
-
-final class TopBarUICollectionViewFlowLayout: NSObject, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellWidth = UIScreen.main.bounds.width / CGFloat(Constants.numberOfCellsToDisplayForScreen) - CGFloat(Constants.edgeInsets)
-        return CGSize(width: cellWidth, height: 50)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return CGFloat(Constants.edgeInsets)
-    }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("ItemSelected = \(indexPath.row)")
-    }   
-}
