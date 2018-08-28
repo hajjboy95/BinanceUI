@@ -8,18 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var topBar: IEHTopBar! {
+        didSet {
+            topBar.collectionViewDataSource = TopBarUICollectionViewDataSource()
+            topBar.collectionViewFlowLayout = TopBarUICollectionViewFlowLayout()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

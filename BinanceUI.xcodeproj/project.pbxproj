@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1ECEF32135573F004B1B57 /* IEHTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECEF22135573F004B1B57 /* IEHTopBar.swift */; };
+		CC1ECEF521355E42004B1B57 /* TopBarUICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECEF421355E42004B1B57 /* TopBarUICollectionViewDataSource.swift */; };
+		CC1ECEF72135884A004B1B57 /* TopBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */; };
 		CC703AB521349E7D00C544AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AB421349E7D00C544AE /* AppDelegate.swift */; };
 		CC703AB721349E7D00C544AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AB621349E7D00C544AE /* ViewController.swift */; };
 		CC703ABA21349E7D00C544AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC703AB821349E7D00C544AE /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC1ECEF22135573F004B1B57 /* IEHTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEHTopBar.swift; sourceTree = "<group>"; };
+		CC1ECEF421355E42004B1B57 /* TopBarUICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUICollectionViewDataSource.swift; sourceTree = "<group>"; };
+		CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBarCollectionViewCell.xib; sourceTree = "<group>"; };
 		CC703AB121349E7D00C544AE /* BinanceUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinanceUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC703AB421349E7D00C544AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC703AB621349E7D00C544AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				CC703AB421349E7D00C544AE /* AppDelegate.swift */,
+				CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */,
+				CC1ECEF421355E42004B1B57 /* TopBarUICollectionViewDataSource.swift */,
+				CC1ECEF22135573F004B1B57 /* IEHTopBar.swift */,
 				CC703AB621349E7D00C544AE /* ViewController.swift */,
 				CC703AB821349E7D00C544AE /* Main.storyboard */,
 				CC703ABB21349E7E00C544AE /* Assets.xcassets */,
@@ -229,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1ECEF72135884A004B1B57 /* TopBarCollectionViewCell.xib in Resources */,
 				CC703ABF21349E7E00C544AE /* LaunchScreen.storyboard in Resources */,
 				CC703ABC21349E7E00C544AE /* Assets.xcassets in Resources */,
 				CC703ABA21349E7D00C544AE /* Main.storyboard in Resources */,
@@ -257,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC703AB721349E7D00C544AE /* ViewController.swift in Sources */,
+				CC1ECEF521355E42004B1B57 /* TopBarUICollectionViewDataSource.swift in Sources */,
 				CC703AB521349E7D00C544AE /* AppDelegate.swift in Sources */,
+				CC1ECEF32135573F004B1B57 /* IEHTopBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
