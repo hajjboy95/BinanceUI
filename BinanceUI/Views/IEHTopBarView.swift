@@ -1,5 +1,5 @@
 //
-//  IEHTopBar.swift
+//  IEHTopBarView.swift
 //  BinanceUI
 //
 //  Created by El-habbash, Ismail on 28/08/2018.
@@ -9,10 +9,11 @@
 import UIKit
 
 class TopBarCollectionViewCell: UICollectionViewCell {
-    
+    @IBOutlet weak var currencyLabel: UILabel!
+    var isTapped: Bool = false
 }
 
-class IEHTopBar: UIView {
+class IEHTopBarView: UIView {
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -20,9 +21,8 @@ class IEHTopBar: UIView {
         let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.frame = CGRect.zero
-        cv.backgroundColor = UIColor.blue
         cv.register(UINib(nibName: "TopBarCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-//        cv.register(TopBarCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cv.backgroundColor = UIColor.binanceGrey
         return cv
     }()
     

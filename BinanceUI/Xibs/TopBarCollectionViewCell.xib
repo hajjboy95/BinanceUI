@@ -19,14 +19,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="164" height="104"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BNB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6y-J1-wDS">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6y-J1-wDS">
                         <rect key="frame" x="2" y="42" width="160" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="0.12549019607843137" green="0.15686274509803921" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="z6y-J1-wDS" firstAttribute="centerY" secondItem="Blc-nG-nfF" secondAttribute="centerY" id="1EN-MC-5uj"/>
                 <constraint firstItem="z6y-J1-wDS" firstAttribute="leading" secondItem="Blc-nG-nfF" secondAttribute="leading" constant="2" id="1rQ-7P-WC1"/>
@@ -35,6 +36,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="KJa-DB-JEz"/>
             <size key="customSize" width="164" height="104"/>
+            <connections>
+                <outlet property="currencyLabel" destination="z6y-J1-wDS" id="CGP-CK-gsM"/>
+            </connections>
             <point key="canvasLocation" x="-266" y="-57"/>
         </collectionViewCell>
     </objects>

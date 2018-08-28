@@ -18,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-Ff-Qg4" customClass="IEHTopBar" customModule="BinanceUI" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-Ff-Qg4" customClass="IEHTopBarView" customModule="BinanceUI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.15686274509803921" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="WkI-qN-DFj"/>
                                 </constraints>
@@ -38,7 +38,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="RC2-CE-PZ3"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="topBar" destination="gHg-Ff-Qg4" id="eEH-2Q-hDQ"/>
+                        <outlet property="topBarView" destination="gHg-Ff-Qg4" id="Aos-6V-C3R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -21,7 +21,6 @@ final class TopBarUICollectionViewDataSource: NSObject, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TopBarCollectionViewCell
-        cell.backgroundColor = UIColor.brown
         return cell
     }
 }
@@ -35,4 +34,7 @@ final class TopBarUICollectionViewFlowLayout: NSObject, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return CGFloat(Constants.edgeInsets)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("ItemSelected = \(indexPath.row)")
+    }   
 }

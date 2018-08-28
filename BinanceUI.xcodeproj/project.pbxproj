@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC1ECEF32135573F004B1B57 /* IEHTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECEF22135573F004B1B57 /* IEHTopBar.swift */; };
+		CC1ECEF32135573F004B1B57 /* IEHTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECEF22135573F004B1B57 /* IEHTopBarView.swift */; };
 		CC1ECEF521355E42004B1B57 /* TopBarUICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECEF421355E42004B1B57 /* TopBarUICollectionViewDataSource.swift */; };
 		CC1ECEF72135884A004B1B57 /* TopBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */; };
+		CC1ECEF9213599B3004B1B57 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECEF8213599B3004B1B57 /* UIColor+extension.swift */; };
 		CC703AB521349E7D00C544AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AB421349E7D00C544AE /* AppDelegate.swift */; };
 		CC703AB721349E7D00C544AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AB621349E7D00C544AE /* ViewController.swift */; };
 		CC703ABA21349E7D00C544AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC703AB821349E7D00C544AE /* Main.storyboard */; };
@@ -37,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC1ECEF22135573F004B1B57 /* IEHTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEHTopBar.swift; sourceTree = "<group>"; };
+		CC1ECEF22135573F004B1B57 /* IEHTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEHTopBarView.swift; sourceTree = "<group>"; };
 		CC1ECEF421355E42004B1B57 /* TopBarUICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUICollectionViewDataSource.swift; sourceTree = "<group>"; };
 		CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		CC1ECEF8213599B3004B1B57 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		CC703AB121349E7D00C544AE /* BinanceUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinanceUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC703AB421349E7D00C544AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC703AB621349E7D00C544AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC1ECEFA213599B8004B1B57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECEF8213599B3004B1B57 /* UIColor+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC1ECEFB213599C4004B1B57 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC703AB621349E7D00C544AE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC1ECEFC213599D0004B1B57 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		CC1ECEFD213599DF004B1B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECEF22135573F004B1B57 /* IEHTopBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC1ECEFE213599EC004B1B57 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECEF421355E42004B1B57 /* TopBarUICollectionViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		CC1ECEFF213599FC004B1B57 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CC703AB821349E7D00C544AE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		CC703AA821349E7D00C544AE = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				CC703AB421349E7D00C544AE /* AppDelegate.swift */,
-				CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */,
-				CC1ECEF421355E42004B1B57 /* TopBarUICollectionViewDataSource.swift */,
-				CC1ECEF22135573F004B1B57 /* IEHTopBar.swift */,
-				CC703AB621349E7D00C544AE /* ViewController.swift */,
-				CC703AB821349E7D00C544AE /* Main.storyboard */,
+				CC1ECEFC213599D0004B1B57 /* Xibs */,
+				CC1ECEFE213599EC004B1B57 /* DataSource */,
+				CC1ECEFD213599DF004B1B57 /* Views */,
+				CC1ECEFB213599C4004B1B57 /* ViewControllers */,
+				CC1ECEFF213599FC004B1B57 /* Storyboards */,
+				CC1ECEFA213599B8004B1B57 /* Extensions */,
 				CC703ABB21349E7E00C544AE /* Assets.xcassets */,
 				CC703ABD21349E7E00C544AE /* LaunchScreen.storyboard */,
 				CC703AC021349E7E00C544AE /* Info.plist */,
@@ -268,8 +319,9 @@
 			files = (
 				CC703AB721349E7D00C544AE /* ViewController.swift in Sources */,
 				CC1ECEF521355E42004B1B57 /* TopBarUICollectionViewDataSource.swift in Sources */,
+				CC1ECEF9213599B3004B1B57 /* UIColor+extension.swift in Sources */,
 				CC703AB521349E7D00C544AE /* AppDelegate.swift in Sources */,
-				CC1ECEF32135573F004B1B57 /* IEHTopBar.swift in Sources */,
+				CC1ECEF32135573F004B1B57 /* IEHTopBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

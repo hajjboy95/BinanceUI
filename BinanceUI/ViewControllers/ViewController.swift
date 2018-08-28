@@ -11,15 +11,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var topBar: IEHTopBar! {
+    @IBOutlet weak var topBarView: IEHTopBarView! {
         didSet {
-            topBar.collectionViewDataSource = TopBarUICollectionViewDataSource()
-            topBar.collectionViewFlowLayout = TopBarUICollectionViewFlowLayout()
+            topBarView.collectionViewDataSource = TopBarUICollectionViewDataSource()
+            topBarView.collectionViewFlowLayout = TopBarUICollectionViewFlowLayout()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
