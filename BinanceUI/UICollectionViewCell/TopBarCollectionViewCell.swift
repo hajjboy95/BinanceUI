@@ -25,5 +25,4 @@ class TopBarCollectionViewCell: UICollectionViewCell {
             }
         }
     }
-
 }

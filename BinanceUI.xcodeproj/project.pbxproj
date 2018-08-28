@@ -20,6 +20,7 @@
 		CC703AD521349E7E00C544AE /* BinanceUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AD421349E7E00C544AE /* BinanceUIUITests.swift */; };
 		EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */; };
 		EC53C6C02135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */; };
+		EC53C6C2213601950014D2B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6C1213601950014D2B7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CC703AD621349E7E00C544AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		EC53C6C1213601950014D2B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CC703AB421349E7D00C544AE /* AppDelegate.swift */,
+				EC53C6C1213601950014D2B7 /* Constants.swift */,
 				CC1ECEFC213599D0004B1B57 /* Xibs */,
 				CC1ECEFE213599EC004B1B57 /* DataSource */,
 				EC53C6BE2135EFEF0014D2B7 /* Delegates */,
@@ -346,6 +349,7 @@
 				EC53C6C02135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift in Sources */,
 				EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */,
 				CC1ECEF32135573F004B1B57 /* IEHTopBarView.swift in Sources */,
+				EC53C6C2213601950014D2B7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

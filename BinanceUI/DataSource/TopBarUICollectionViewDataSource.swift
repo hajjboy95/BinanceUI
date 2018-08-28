@@ -8,19 +8,13 @@
 
 import UIKit
 
-enum Constants {
-    static let numberOfTabs = 4
-    static let numberOfCellsToDisplayForScreen = 4
-    static let edgeInsets = 10
-}
-
 final class TopBarUICollectionViewDataSource: NSObject, UICollectionViewDataSource  {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Constants.numberOfTabs
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TopBarCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? TopBarCollectionViewCell else { return UICollectionViewCell() }
         return cell
     }
 }
