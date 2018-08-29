@@ -12,15 +12,17 @@
 		CC1ECEF72135884A004B1B57 /* TopBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECEF62135884A004B1B57 /* TopBarCollectionViewCell.xib */; };
 		CC1ECEF9213599B3004B1B57 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECEF8213599B3004B1B57 /* UIColor+extension.swift */; };
 		CC703AB521349E7D00C544AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AB421349E7D00C544AE /* AppDelegate.swift */; };
-		CC703AB721349E7D00C544AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AB621349E7D00C544AE /* ViewController.swift */; };
+		CC703AB721349E7D00C544AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AB621349E7D00C544AE /* HomeViewController.swift */; };
 		CC703ABA21349E7D00C544AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC703AB821349E7D00C544AE /* Main.storyboard */; };
 		CC703ABC21349E7E00C544AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC703ABB21349E7E00C544AE /* Assets.xcassets */; };
 		CC703ABF21349E7E00C544AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC703ABD21349E7E00C544AE /* LaunchScreen.storyboard */; };
 		CC703ACA21349E7E00C544AE /* BinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AC921349E7E00C544AE /* BinanceUITests.swift */; };
 		CC703AD521349E7E00C544AE /* BinanceUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AD421349E7E00C544AE /* BinanceUIUITests.swift */; };
+		EC046CAB2137350F00902E8C /* TableViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC046CAA2137350F00902E8C /* TableViewCollectionViewCell.swift */; };
 		EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */; };
 		EC53C6C02135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */; };
 		EC53C6C2213601950014D2B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6C1213601950014D2B7 /* Constants.swift */; };
+		ECCCC42921374124009C6E69 /* TableViewCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCC42821374124009C6E69 /* TableViewCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,7 @@
 		CC1ECEF8213599B3004B1B57 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		CC703AB121349E7D00C544AE /* BinanceUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinanceUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC703AB421349E7D00C544AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC703AB621349E7D00C544AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC703AB621349E7D00C544AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC703AB921349E7D00C544AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC703ABB21349E7E00C544AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC703ABE21349E7E00C544AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,9 +60,11 @@
 		CC703AD021349E7E00C544AE /* BinanceUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinanceUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC703AD421349E7E00C544AE /* BinanceUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceUIUITests.swift; sourceTree = "<group>"; };
 		CC703AD621349E7E00C544AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC046CAA2137350F00902E8C /* TableViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		EC53C6C1213601950014D2B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECCCC42821374124009C6E69 /* TableViewCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,7 @@
 		CC1ECEFB213599C4004B1B57 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CC703AB621349E7D00C544AE /* ViewController.swift */,
+				CC703AB621349E7D00C544AE /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */,
+				EC046CAA2137350F00902E8C /* TableViewCollectionViewCell.swift */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */,
+				ECCCC42821374124009C6E69 /* TableViewCollectionViewFlowLayout.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -342,11 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC703AB721349E7D00C544AE /* ViewController.swift in Sources */,
+				CC703AB721349E7D00C544AE /* HomeViewController.swift in Sources */,
 				CC1ECEF521355E42004B1B57 /* TopBarUICollectionViewDataSource.swift in Sources */,
 				CC1ECEF9213599B3004B1B57 /* UIColor+extension.swift in Sources */,
 				CC703AB521349E7D00C544AE /* AppDelegate.swift in Sources */,
 				EC53C6C02135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift in Sources */,
+				EC046CAB2137350F00902E8C /* TableViewCollectionViewCell.swift in Sources */,
+				ECCCC42921374124009C6E69 /* TableViewCollectionViewFlowLayout.swift in Sources */,
 				EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */,
 				CC1ECEF32135573F004B1B57 /* IEHTopBarView.swift in Sources */,
 				EC53C6C2213601950014D2B7 /* Constants.swift in Sources */,
@@ -600,6 +608,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BinanceUIUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,6 +628,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BinanceUIUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -42,4 +42,3 @@ final class TopBarUICollectionViewFlowLayout: NSObject, UICollectionViewDelegate
         displayedCell.isTapped = selectedItemIndexPath == indexPath ? true : false
     }
 }
-
