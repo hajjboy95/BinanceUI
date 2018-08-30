@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     
     lazy var selectedIndexCallBack: ((IndexPath) -> Void) = {
         self.selectedItemIndex = $0.row
+        self.collectionView.scrollToItem(at: $0, at: .bottom, animated: true)
     }
     
     @IBOutlet weak var topBarView: IEHTopBarView!
@@ -59,4 +60,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         return 0
     }
     
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        var visibleRect = CGRect()
+        visibleRect.origin = collectionView.contentOffset
+        visibleRect.size = collectionView.bounds.size
+
+        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+        guard let indexPath = collectionView.indexPathForItem(at: visiblePoint) else { return }
+        
+        topBarView.highlightCell(at: indexPath)
+    }
 }

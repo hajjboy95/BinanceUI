@@ -13,6 +13,17 @@ final class TopBarUICollectionViewFlowLayout: NSObject, UICollectionViewDelegate
     var selectedIndexPath: ((IndexPath) -> ())?
     var selectedItemIndexPath = IndexPath(item: 0, section: 0)
     
+    func highlightCell(for collectionView: UICollectionView, at indexPath: IndexPath) {
+        if let prevCell = collectionView.cellForItem(at: selectedItemIndexPath) as? TopBarCollectionViewCell {
+            prevCell.isTapped = false
+        }
+        
+        if let tappedCell = collectionView.cellForItem(at: indexPath) as? TopBarCollectionViewCell {
+            tappedCell.isTapped = true
+        }
+        selectedItemIndexPath = indexPath
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = UIScreen.main.bounds.width / CGFloat(Constants.numberOfCellsToDisplayForScreen) - CGFloat(Constants.edgeInsets)
         return CGSize(width: cellWidth, height: 50)
@@ -25,13 +36,7 @@ final class TopBarUICollectionViewFlowLayout: NSObject, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndexPath?(indexPath)
         
-        if let prevCell = collectionView.cellForItem(at: selectedItemIndexPath) as? TopBarCollectionViewCell {
-            prevCell.isTapped = false
-        }
-        
-        if let tappedCell = collectionView.cellForItem(at: indexPath) as? TopBarCollectionViewCell {
-            tappedCell.isTapped = true
-        }
+        highlightCell(for: collectionView, at: indexPath)
         
         selectedItemIndexPath = indexPath
         print("ItemSelected = \(indexPath.row)")

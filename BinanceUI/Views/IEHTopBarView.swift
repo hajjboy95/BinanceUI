@@ -47,6 +47,10 @@ class IEHTopBarView: UIView {
         self.collectionViewFlowLayout = topBarUICollectionViewFlowLayout
     }
     
+    func highlightCell(at indexPath: IndexPath) {
+        guard let collectionViewFlowLayout = collectionViewFlowLayout as? TopBarUICollectionViewFlowLayout else { return }
+        collectionViewFlowLayout.highlightCell(for: collectionView, at: indexPath)
+    }
     
     private func setUpViews() {
         let views = ["cv": collectionView]
