@@ -10,10 +10,12 @@ import UIKit
 
 final class TopBarUICollectionViewFlowLayout: NSObject, UICollectionViewDelegateFlowLayout {
     
-    var selectedIndexPath: ((IndexPath) -> ())?
+    var selectedIndexPathCallback: ((IndexPath) -> ())?
     var selectedItemIndexPath = IndexPath(item: 0, section: 0)
     
     func highlightCell(for collectionView: UICollectionView, at indexPath: IndexPath) {
+        guard indexPath != selectedItemIndexPath else { return }
+        
         if let prevCell = collectionView.cellForItem(at: selectedItemIndexPath) as? TopBarCollectionViewCell {
             prevCell.isTapped = false
         }
@@ -34,7 +36,7 @@ final class TopBarUICollectionViewFlowLayout: NSObject, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedIndexPath?(indexPath)
+        selectedIndexPathCallback?(indexPath)
         
         highlightCell(for: collectionView, at: indexPath)
         

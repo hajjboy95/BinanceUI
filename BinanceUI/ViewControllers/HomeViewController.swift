@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
     private func setupTopBarView() {
         topBarView.collectionViewDataSource = TopBarUICollectionViewDataSource()
         let uicollectionFlowLayout = TopBarUICollectionViewFlowLayout()
-        uicollectionFlowLayout.selectedIndexPath = selectedIndexCallBack
+        uicollectionFlowLayout.selectedIndexPathCallback = selectedIndexCallBack
         topBarView.collectionViewFlowLayout = uicollectionFlowLayout
     }
 }
@@ -47,7 +47,7 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
 }
 
