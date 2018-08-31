@@ -9,12 +9,16 @@
 import UIKit
 
 final class TopBarUICollectionViewDataSource: NSObject, UICollectionViewDataSource  {
+    
+    var headerTitles: [String]?
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Constants.numberOfTabs
+        return headerTitles?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? TopBarCollectionViewCell else { return UICollectionViewCell() }
+        cell.currencyLabel.text = headerTitles?[indexPath.row] ?? ""
         return cell
     }
 }

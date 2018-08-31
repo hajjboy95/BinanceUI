@@ -19,6 +19,7 @@
 		CC703ACA21349E7E00C544AE /* BinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AC921349E7E00C544AE /* BinanceUITests.swift */; };
 		CC703AD521349E7E00C544AE /* BinanceUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC703AD421349E7E00C544AE /* BinanceUIUITests.swift */; };
 		EC046CAB2137350F00902E8C /* TableViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC046CAA2137350F00902E8C /* TableViewCollectionViewCell.swift */; };
+		EC3733C921386D660089317C /* CoinFetchingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3733C821386D660089317C /* CoinFetchingRepository.swift */; };
 		EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */; };
 		EC53C6C02135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */; };
 		EC53C6C2213601950014D2B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C6C1213601950014D2B7 /* Constants.swift */; };
@@ -61,6 +62,7 @@
 		CC703AD421349E7E00C544AE /* BinanceUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceUIUITests.swift; sourceTree = "<group>"; };
 		CC703AD621349E7E00C544AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC046CAA2137350F00902E8C /* TableViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC3733C821386D660089317C /* CoinFetchingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFetchingRepository.swift; sourceTree = "<group>"; };
 		EC53C6BB2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC53C6BF2135F0010014D2B7 /* TopBarUICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		EC53C6C1213601950014D2B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				CC703AB421349E7D00C544AE /* AppDelegate.swift */,
 				EC53C6C1213601950014D2B7 /* Constants.swift */,
+				EC3733C721386D4F0089317C /* Repositories */,
 				CC1ECEFC213599D0004B1B57 /* Xibs */,
 				CC1ECEFE213599EC004B1B57 /* DataSource */,
 				EC53C6BE2135EFEF0014D2B7 /* Delegates */,
@@ -196,6 +199,14 @@
 				CC703AD621349E7E00C544AE /* Info.plist */,
 			);
 			path = BinanceUIUITests;
+			sourceTree = "<group>";
+		};
+		EC3733C721386D4F0089317C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EC3733C821386D660089317C /* CoinFetchingRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		EC53C6BD2135EF7E0014D2B7 /* UICollectionViewCell */ = {
@@ -358,6 +369,7 @@
 				EC53C6BC2135EF5D0014D2B7 /* TopBarCollectionViewCell.swift in Sources */,
 				CC1ECEF32135573F004B1B57 /* IEHTopBarView.swift in Sources */,
 				EC53C6C2213601950014D2B7 /* Constants.swift in Sources */,
+				EC3733C921386D660089317C /* CoinFetchingRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

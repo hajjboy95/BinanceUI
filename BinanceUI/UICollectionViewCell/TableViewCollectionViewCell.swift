@@ -16,7 +16,11 @@ class TableViewCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    var dataSource = ["One", "Two", "Three"]
+    var dataSource: [CoinMarketInfo]? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,12 +38,12 @@ class TableViewCollectionViewCell: UICollectionViewCell {
 
 extension TableViewCollectionViewCell: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return dataSource?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = dataSource[indexPath.row]
+        cell.textLabel?.text = dataSource?[indexPath.row].baseAssetName ?? ""
         return cell
     }
     
